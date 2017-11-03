@@ -1,3 +1,65 @@
 body {
     background: url("http://funny-pictures-quotes.com/wp-content/uploads/2014/11/unicorn-bacon-rainbow-colored-candy-humor-funny-picture.jpg");
+    white-space: nowrap;
+    
+    -webkit-animation: rainbow 1s infinite; 
+    -ms-animation: rainbow 1s infinite;
+    animation: rainbow 1s infinite;
+
+    
+}
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 60px;
+    background: rgba(0, 255, 255, .6);
+    
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    align: center;
+}
+
+.comic {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    background: rgba(255, 0, 255, .6);
+}
+
+.shakey {
+    -webkit-animation: sideways 0.1s linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate; 
+}
+
+
+/* Webkit keyframes */
+
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+@-webkit-keyframes sideways {
+    0% {margin-left: -100%;}
+    100% {margin-left: 100%;}
 }
